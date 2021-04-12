@@ -1,5 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export default () => {
-
-  console.log("this");
+export default (a: number, b: number): number => {
+  return a + b;
 };
