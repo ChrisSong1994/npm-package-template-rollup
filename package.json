@@ -14,7 +14,8 @@
     "build": "npm run clean && rollup  -c  --environment NODE_ENV:production",
     "clean": "rimraf dist",
     "lint": "eslint src --ext .ts",
-    "test": "jest"
+    "test": "jest",
+    "commit": "cz"
   },
   "repository": {
     "type": "git",
@@ -56,6 +57,7 @@
     "@typescript-eslint/eslint-plugin": "^4.21.0",
     "@typescript-eslint/parser": "^4.21.0",
     "chalk": "^4.1.0",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.24.0",
     "jest": "^26.6.3",
     "lint-staged": "^10.5.4",
@@ -67,5 +69,10 @@
     "tslib": "^2.2.0",
     "typescript": "^4.2.4",
     "yorkie": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
