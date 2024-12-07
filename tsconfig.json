@@ -1,12 +1,17 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "ES2015",
     "module": "esnext",
-    "strict": true,
-    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowJs": false,
+    "checkJs": false,
+    "declaration": true, // 启用类型声明文件的生成
+    "sourceMap": true,
+    "rootDir": "src",
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node"
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["./examples/**", "node_modules", "./dist/*"]
+  "include": ["src/**/*", "package.json"],
+  "exclude": ["node_modules", "**/*.spec.ts", "./dist/*"]
 }
